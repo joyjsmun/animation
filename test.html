@@ -5,34 +5,39 @@
     <meta name="viewport" content="width=device-width">
     <style>
 
-    body{
-        display:flex;
-        align-items: center;
-        justify-content: center;
-    }
-@keyframes magic {
-    0%{
-        transform:rotateY(0)
-    }
-    50%{
-        transform:rotateY(180deg) translateY(500px)
-    }
-    100%{
-        transform:rotateY(0)
-    }
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
-img{
-    height:200px;
-    border-radius: 30%;
-    animation:magic 3s infinite ease-in-out;
-    
+div{
+    background-color: teal;
+    width: 200px;
+    height: 200px;
 }
 
+@media screen and (min-width:650px) and (max-width:700px){
+    div{background-color: tomato}
+}
+
+span{
+    font-size: 36px;
+}
+@media screen and (orientation: landscape){
+    span{display:none}
+}
+
+@media print{
+    body{background-color: tomato}
+}
 
     </style>
   </head>
   <body>
- <img src="car.png"/>
+<div></div>
+<span>please flip your phone</span>
   </body>
 </html>
