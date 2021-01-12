@@ -17,25 +17,32 @@
             display:flex;
             justify-content: center;
             align-items: center;
+            animation: clock 5s ease-in-out infinite;
         }
+
+        @keyframes clock {
+          from{transform: rotateZ(0deg)}
+          to{transform: rotateZ(180deg)}
+        }
+
         .dot{
             height:70px;
             width: 70px;
             border-radius: 50%;
             background-color: wheat;
-            margin:20px;
+            margin:30px;
         }
+     
 
     </style>
   </head>
   <body>
-      
     <div class="dots">
       <div class="dot"></div>
       <div class="dot"></div>
       <div class="dot"></div>
     </div>
-    <div>
+    <div class="bars">
         <div class="bar"></div>
         <div class="bar"></div>
         <div class="bar"></div>
