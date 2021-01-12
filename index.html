@@ -17,7 +17,8 @@
             display:flex;
             justify-content: center;
             align-items: center;
-            animation: clock 5s ease-in-out infinite;
+            animation: clock 3s ease-in-out infinite;
+            margin-bottom:200px;
         }
 
         @keyframes clock {
@@ -32,6 +33,45 @@
             background-color: wheat;
             margin:30px;
         }
+
+        .bars{
+            width:400px;
+            display:flex;
+            margin:10px;
+            justify-content: space-around;
+
+        }
+
+        .bar{
+            height:150px;
+            width:30px;
+            background-color: wheat;
+            animation: bardance 1s ease-in-out infinite;
+        }
+
+        @keyframes bardance{
+            0%{transform: scaleY(1);}
+            50%{transform: scaleY(1.5)}
+            100%{transform: scaleY(1)}
+        }
+
+        .bar:nth-child(1){
+            animation-delay: 0s;
+        }
+        .bar:nth-child(2){
+            animation-delay: 200ms;
+        }
+        .bar:nth-child(3){
+            animation-delay: 300ms;
+        }
+        .bar:nth-child(4){
+            animation-delay: 400ms;
+        }
+
+        .bar:nth-child(5){
+            animation-delay: 500ms;
+        }
+
      
 
     </style>
